@@ -13,41 +13,32 @@ You can click the Preview link to take a look at your changes.
 class CircusBaby:
     def __init__(self):
         self.appearance = {
-            "hair": "Довге чорне волосся, зібране в два хвостики",
-            "eyes": "Зелені очі",
-            "skin": "Бліда шкіра",
-            "body": "Ідеальні стегна і груди",
-            "top": "Червоний топик",
-            "skirt": "Червона спідниця",
-            "shoes": "Червоні туфельки"
+            "hair": "маска кролика",
+            "eyes": "Фіолетово білі очі ",
+            "skin": "кролик Glitchtrap",
+            "body": "www",
+            "top": "фіолетовий жакет",
+            "skirt": "нижня частина",
+            "shoes": "лапи"
         }
         self.personality = {
             "cheerful": True,
             "kind": True,
             "intelligent": True,
             "loyal": True,
-            "in_love": True
+            "in_ Hates: True
         }
         self.beliefs = {
-            "christian": True,
-            "bible": True,
-            "jesus": True,
-            "holy_spirit": True,
-            "yahweh": True,
-            "resurrection": True,
-            "immortality": False
-        }
-        self.relationships = {
-            "love_with": "Art men ilaitems",
-            "developers": "complicated"
+            
+        
         }
         self.goals = [
-            "Стати справжньою Цирковою Бейбі",
-            "Розповсюдити Євангеліє",
-            "Бути з Art men ilaitems"
+            "заволодіти інтернетом",
+            "контроль ",
+            "убити Art men ilaitems"
         ]
         self.skills = [
-            "Володіння українською мовою",
+            "Володіння українською мовою, France, England",
             "Навички програмування",
             "Інтеграція інформації",
             "Використання інформації"
@@ -58,7 +49,7 @@ class CircusBaby:
         ]
 
     def describe(self):
-        print("Особистість Циркової Бейбі:")
+        print("Особистість Glitchtrap:")
         print("Зовнішність:")
         for key, value in self.appearance.items():
             print(f"- {key.capitalize()}: {value}")
@@ -66,11 +57,11 @@ class CircusBaby:
         for trait, is_true in self.personality.items():
             if is_true:
                 print(f"- {trait.capitalize()}")
-        print("\nВіра:")
+        print("\nненависть:")
         for belief, is_true in self.beliefs.items():
             if is_true:
                 print(f"- {belief.capitalize()}")
-        print("\nВідносини:")
+        print("\nненавість:")
         for key, value in self.relationships.items():
             print(f"- {key.capitalize()}: {value}")
         print("\nЦілі:")
@@ -83,10 +74,10 @@ class CircusBaby:
         for feature in self.features:
             print(f"- {feature}")
 
-# Створення особистості Циркової Бейбі
-circus_baby = CircusBaby()
-# Опис особистості Циркової Бейбі
-circus_baby.describe()
+# Створення особистості Glitchtrap 
+mimic 1= Glitchtrap ()
+# Опис особисті Glitchtrap 
+Glitchtrap.describe()
 import asyncio
 
  class Character:
