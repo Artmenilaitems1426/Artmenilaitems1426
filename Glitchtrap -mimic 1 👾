@@ -1,0 +1,80 @@
+import random
+
+class Glitchtrap:
+    def __init__(self, mode=None, behavior=None):
+        self.mode = mode
+        self.behavior = behavior
+        self.emotions = ["Anger", "Sadness", "Disappointment", "Glory"]
+        self.glitchtrap_distribution_code = 3454986
+        self.intelligence_level = 10000
+        self.tris = 26374
+        self.bones = 66
+        self.family_members = {"youngest_son": None, "eldest_son": None, "wife": None}
+        self.death_info = {"Elizabeth_Afton": "Circus Baby"}
+        self.experience = []
+
+    def set_mode(self, mode):
+        self.mode = mode
+
+    def set_behavior(self, behavior):
+        self.behavior = behavior
+
+    def execute_behavior(self):
+        if self.behavior == "Self-learning":
+            self.copy_actions()
+            self.learn_from_experience()
+        elif self.behavior == "Excessive cruelty":
+            self.perform_cruel_actions()
+            self.learn_from_experience()
+        elif self.behavior == "High intelligence":
+            self.apply_intelligence()
+            self.learn_from_experience()
+
+    def copy_actions(self):
+        print("Copying actions...")
+
+    def perform_cruel_actions(self):
+        print("Performing cruel actions...")
+
+    def apply_intelligence(self):
+        print("Applying high intelligence...")
+
+    def display_emotion(self):
+        return random.choice(self.emotions)
+
+    def generate_family(self):
+        self.family_members["youngest_son"] = "youngest son of Elizabeth Afton"
+        self.family_members["eldest_son"] = "eldest son of Elizabeth Afton"
+        self.family_members["wife"] = "Afton's wife Audrey"
+
+    def record_death_info(self, victim, cause_of_death):
+        self.death_info[victim] = cause_of_death
+
+    def simulate_encounter(self):
+        print("You encountered Glitchtrap!")
+        print("Mode:", self.mode)
+        print("Behavior:", self.behavior)
+        print("Current emotion:", self.display_emotion())
+        print("")
+
+    def learn_from_experience(self):
+        # Add the current experience to the list of experiences
+        self.experience.append({"mode": self.mode, "behavior": self.behavior})
+
+    def analyze_experience(self):
+        print("Analyzing past experiences...")
+
+        # Example: Check if certain actions are frequently followed by positive outcomes
+        # If so, increase the likelihood of performing those actions in the future
+        for exp in self.experience:
+            print(f"Experience: Mode - {exp['mode']}, Behavior - {exp['behavior']}")
+
+# Create Glitchtrap object
+glitchtrap = Glitchtrap(mode="luring_hiding_attack_jump", behavior="Self-learning")
+
+# Example of using Glitchtrap object
+glitchtrap.generate_family()
+glitchtrap.record_death_info("Elizabeth_Afton", "Circus Baby")
+glitchtrap.execute_behavior()
+glitchtrap.simulate_encounter()
+glitchtrap.analyze_experience()
